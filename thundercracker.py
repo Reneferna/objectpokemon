@@ -11,7 +11,7 @@ class Pokemon(BasePokemon):
         self.add_move(Thunder_attack())
         self.add_move(Electrocute())
         self.add_move(Tesla_electricity())
-        self.set_type(Type.Electric)
+        self.set_type(Type.FIRE)
         self.move = 0
         self.moves = ['High_voltage!!', "Thunder_attack!!", "Electrocute!!", "Tesla_electricity!!"]
 
@@ -28,7 +28,7 @@ class High_voltage(BaseMove):
     def __init__(self):
         BaseMove.__init__(self)
         self.choose_uses(1)
-        self.set_type(Type.ELECTRIC)
+        self.set_type(Type.FIRE)
 
     def get_name(self):
         return "High_voltage"
@@ -37,7 +37,7 @@ class Thunder_attack(BaseMove):
     def __init__(self):
         BaseMove.__init__(self)
         self.choose_uses(1)
-        self.set_type(Type.ELECTRIC)
+        self.set_type(Type.FIRE)
 
     def get_name(self):
         return "Thunder_attack"
@@ -57,7 +57,7 @@ class Tesla_electricity(BaseMove):
     def __init__(self):
         BaseMove.__init__(self)
         self.choose_uses(1)
-        self.set_type(Type.ELECTRIC)
+        self.set_type(Type.WATER)
 
     def get_name(self):
         return "Tesla electricity!"
